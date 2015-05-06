@@ -42,7 +42,7 @@ public class App
     public void post() throws JSONException, IOException{
     	JSONObject json = new JSONObject();
     	JSONObject test = new JSONObject();
-    	json.put("username", Param.username);
+    	json.put("email", Param.email);
     	json.put("password", Param.password);
     	json.put("query", Param.query);
     	
