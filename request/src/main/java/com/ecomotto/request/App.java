@@ -41,15 +41,19 @@ public class App
     
     public void post() throws JSONException, IOException{
     	JSONObject json = new JSONObject();
-    	JSONObject test = new JSONObject();
+    	
+    	Param.fillZip();
+    	//JSONObject test = new JSONObject();
     	json.put("email", Param.email);
     	json.put("password", Param.password);
-    	json.put("query", Param.query);
+    	//json.put("query", Param.query);
+    	json.put("zip", Param.zip);
+    	//json.put("username", Param.username);
     	
     	CloseableHttpClient httpClient = HttpClients.createDefault();
     	List<NameValuePair> params = new ArrayList<NameValuePair>();
     	params.add(new BasicNameValuePair("data",json.toString()));
-
+    	//System.out.println("Request JSON: "+json.toString());
     	try {
 
     	    HttpPost request = new HttpPost(Param.apiURL);
