@@ -19,7 +19,8 @@ public class Param
 	public static JSONObject zip = new JSONObject();
 	
 	public static void fillZip() throws JSONException{
-		Param.zip.put("zip1", "93514");
+		Param.zip.put("zip1", "75080");
+		Param.zip.put("zip1", "75081");
 	}
 	//public static String query = "select ID from USERS where FIRST_NAME='nrg'"; 
 }
